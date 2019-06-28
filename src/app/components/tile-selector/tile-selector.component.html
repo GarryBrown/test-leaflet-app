@@ -1,0 +1,7 @@
+<section class="container">
+    <select (ngModelChange)="selectTilesHandler($event)" [ngModel]="selectedTiles.value" class="uk-select"
+            name="tiles">
+        <option *ngFor="let tile of tilesList" value="{{tile.value}}">{{tile.name}}</option>
+    </select>
+</section>
+
